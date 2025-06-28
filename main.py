@@ -9,9 +9,10 @@ def merge_sorted_arrays(arr1, arr2):
         else:
             merged_array.append(arr2[j])
             j+=1
-            merged_array.extend(arr1[i:])
-            merged_array.extend(arr2[j:])
-            return merged_array
+    
+    merged_array.extend(arr1[i:])
+    merged_array.extend(arr2[j:])
+    return merged_array
 
 
 
